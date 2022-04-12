@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./app.css">
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="nav-app" id="nav-nav">
+                <div class="container-nav">
+                    <h1>Titulo</h1>
+                    <a href="javascript:void(0);" class="icon" onclick="menu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+               <div class="nav-options">
+                    <ul>
+                    <li>HOME</li>
+                    <li>COMPRAS</li>
+                    <li>CONTATO</li>
+                    <li>BLOG</li>
+                </ul>
+               </div>
+            </nav>
+        </header>
+
+        <script type="text/javascript" charset="utf-8">
+            function menu() {
+                const nav = document.getElementById('nav-nav')
+                if (nav.className === 'nav-app') {
+                    nav.className += ' reponsive';
+                } else {
+                    nav.className = 'nav-app';
+                }
+                console.log(nav.className);
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+}
+
+.nav-app {
+    display: flex;
+    height: 60px;
+    width: 100vw;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #50aaa3;
+    transition: all 700ms;
+}
+
+.container-nav {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    padding: 20px 10px;
+    float: left;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.nav-app .icon {
+    margin: 0;
+    float: right;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 20px 10px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: white;
+    transition: all 300ms;
+    border-radius: 5px;
+    color: black;
+}
+
+.nav-app .icon {
+    display: none;
+}
+
+@media screen and (min-width: 600px) {
+
+    body {
+        background: red;
+    }
+
+}
+
+@media screen and (max-width: 465px) {
+
+    .nav-app .icon {
+        display: block;
+    }
+
+    ul li:hover {
+        background: white;
+        transition: all 300ms;
+        border-radius: 0;
+        color: black;
+    }
+
+    .nav-app .icon {
+        margin-right: 5px;
+        font-size: 1.2em;
+        border: 1px solid white;
+        border-radius: 3px;
+        padding: 5px 10px;
+        color: white;
+    }
+
+    .nav-app {
+        display: block;
+    }
+
+    ul {
+        width: 100vw;
+        float: left;
+        flex-direction: column;
+    }
+
+    .nav-app .icon {
+        float: right;
+    }
+
+    .reponsive {
+        height: calc(60px * 5);
+    }
+
+}
